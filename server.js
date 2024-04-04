@@ -27,7 +27,7 @@ app.get("/resturants", bodyParser.json(), function (req, res) {
   const sql = `SELECT * FROM resturants`;
   con.query(sql, (err, result))
   if (err) throw err;
-  res.send(result);
+  res.send(result)
 })
 // endpoint for getting all orders
 app.get("/orders", bodyParser.json(), function (req, res) {
